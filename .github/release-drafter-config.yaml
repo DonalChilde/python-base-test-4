@@ -30,13 +30,14 @@
 name-template: "v$NEXT_PATCH_VERSION"
 tag-template: "v$NEXT_PATCH_VERSION"
 template: |
+  ## [v$NEXT_PATCH_VERSION](https://github.com/$OWNER/$REPOSITORY/compare/$PREVIOUS_TAG...v$NEXT_PATCH_VERSION)
   ### What's Changed
 
   _Describe the changes here_
 
   $CHANGES
 
-change-template: "- $TITLE ([#$NUMBER](https://github.com/DonalChilde/python-base-test-4/pull/$NUMBER))"
+change-template: "- $TITLE ([#$NUMBER]($URL)"
 category-template: "### $TITLE"
 
 categories:
