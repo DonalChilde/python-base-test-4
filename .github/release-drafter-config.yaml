@@ -27,13 +27,17 @@
 #   ## Changes
 
 #   $CHANGES
-ame-template: "v$RESOLVED_VERSION"
-tag-template: "v$RESOLVED_VERSION"
+name-template: "v$NEXT_PATCH_VERSION"
+tag-template: "v$NEXT_PATCH_VERSION"
 template: |
-  # What's Changed
+  ### What's Changed
+
+  _Describe the changes here_
+
   $CHANGES
 
 change-template: "- $TITLE ([#$NUMBER](https://github.com/DonalChilde/python-base-test-4/pull/$NUMBER))"
+category-template: "### $TITLE"
 
 categories:
   - title: Added
@@ -59,19 +63,19 @@ categories:
     labels:
       - dependencies
 
-version-resolver:
-  major:
-    labels:
-      - "changelog:removed"
-  minor:
-    labels:
-      - "changelog:added"
-      - "changelog:deprecated"
-  patch:
-    labels:
-      - "changelog:fixed"
-      - "changelog:security"
-      - "dependency"
+# version-resolver:
+#   major:
+#     labels:
+#       - "changelog:removed"
+#   minor:
+#     labels:
+#       - "changelog:added"
+#       - "changelog:deprecated"
+#   patch:
+#     labels:
+#       - "changelog:fixed"
+#       - "changelog:security"
+#       - "dependency"
 
 exclude-labels:
   - "skip-changelog"
