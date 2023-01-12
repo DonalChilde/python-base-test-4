@@ -1,6 +1,6 @@
 # Changelog
 
-## [Unreleased](https://github.com/DonalChilde/python-base-test-4/v0.0.0...HEAD)
+## [Unreleased](https://github.com/DonalChilde/python-base-test-4/compare/v0.0.0...HEAD)
 
 Please do not update the unreleased notes.
 
